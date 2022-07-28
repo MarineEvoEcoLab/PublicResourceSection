@@ -1,8 +1,10 @@
 
-<img src="assets/media/PuritzMEE2.png#gh-light-mode-only" width=190>
+# Public Resources
 
 [![run with neptune](https://img.shields.io/badge/run%20with-neptune-orange?)](https://www.neptunesystems.com/)
 
-# Introduction
+## Introduction
 
-**MarineEvoEcoLab/PublicResourceSection** contains information on the materials and methods used in the experimental aquarium design.  
+**MarineEvoEcoLab/PublicResourceSection** contains information on the materials and methods used in the experimental aquarium design. Within this repository you will find images 
+
+
