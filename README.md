@@ -1,7 +1,7 @@
 
-<div style="float:left:margin:0 10px 10px 0" markdown="1">
-   # ![MarnEcoEvo Logo](assets/media/PuritzMEE2.png#gh-light-mode-only)
-</div>
+<img src="assets/media/PuritzMEE2.png#gh-light-mode-only" width=190>
+
+[![run with docker](https://img.shields.io/badge/run%20with-neptune-orange?logo=)](https://www.neptunesystems.com/)
 
 # Introduction
 
