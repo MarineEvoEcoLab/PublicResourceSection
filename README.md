@@ -5,9 +5,9 @@
 
 ## Introduction
 
-**MarineEvoEcoLab/PublicResourceSection** provides information on the materials and methods used in the experimental aquarium design. This includes a description of [system design](#SystemDesign), [list of parts](##PartsList), and [code](https://github.com/MarineEvoEcoLab/PublicResourcesSection/docs/Scripts) paramount to the experiment. 
+**MarineEvoEcoLab/PublicResourceSection** provides information on the materials and methods used in the experimental aquarium design. This includes a description of [system design](#System), [list of parts](#Parts), and [code](#Code) paramount to the experiment. 
 
-## System Design
+# System Design
 
 ![Hyrule schematic](assets/media/Hyrule.jpg)
 
@@ -21,9 +21,84 @@
 
 **Tile 1** Photo of Hyrule on the left and Inside H4 bucket on the right. 
 
-## Parts List
+# Parts List
 
 Full Parts list.... need help with this. 
 
-## Code
+Want to embed a markdown dataframe with materials and urls
 
+# Code
+
+Below is Apex code used to control seawater chemistry cycling.
+
+
+> **pH Control:**
+>
+> CO2_H2_DEC
+> ```
+> Fallback OFF
+> Set OFF
+> OSC 000:00/000:05/000:20 Then ON
+> If pH_Hi < 7.00 Then OFF
+> If Time 20:30 to 20:00 Then OFF
+> ```
+> CO2_HC_LP
+> ```
+> Fallback OFF
+> Set OFF
+> OSC 000:00/000:01/001:29 Then ON
+> If pH_Hi < 7.01 Then OFF
+> If Time 00:00 to 20:30 Then OFF
+>```
+> CO2_HC_LP2
+>```
+> Fallback OFF
+> Set OFF
+> OSC 000:00/000:01/001:29 Then on
+> If Time 03:00 to 00:00 Then OFF
+> If pH_Hi < 7.05 Then OFF
+>```
+> CO2_HC Port 
+> ```
+>Fallback OFF 
+>Set OFF
+>If Output CO2_HC_DEC = ON Then ON
+>If Output CO2_HC_LP = ON Then ON
+>If Output CO2_HC_LP2 = ON Then ON
+>If pH_Hi < 6.80 Then OFF
+> ```
+>---
+
+> **Dissolved Oxygen (DO)**
+>
+> N2_HC_LP
+>```
+> Fallback OFF
+> Set OFF
+> If Time 00:00 to 03:00 Then ON
+> If DO_Hi < 02.0 Then OFF
+>```
+> N2_HC_INC
+>```
+> Fallback OFF
+> Set OFF
+>```
+> N2_HC
+> ```
+> Fallback OFF
+> Set OFF
+> If Output N2_HC_LP = ON Then ON
+> If Output N2_HC_INC = ON Then ON
+> If Time 20:00 to 00:00 Then ON
+> If DO_Hi < 01.5 Then OFF
+> ```
+> ----
+
+> Ambient Air 
+> 
+> ```
+> Fallback OFF
+> Set OFF
+> If Time 03:00 to 20:00 Then ON
+> ```
+> ----
