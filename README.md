@@ -21,7 +21,7 @@
 
 **Tile 1** Photo of Hyrule on the left and Inside H4 bucket on the right. 
 
-# Parts List
+# Parts
 
 Full Parts list.... need help with this. 
 
