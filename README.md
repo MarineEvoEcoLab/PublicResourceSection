@@ -96,9 +96,15 @@ Below is Apex code used to control seawater chemistry cycling.
 
 > Ambient Air 
 > 
+> HI_AIR
 > ```
 > Fallback OFF
 > Set OFF
 > If Time 03:00 to 20:00 Then ON
+> ```
+> CON_AIR
+> ```
+> Fallback OFF
+> Set ON
 > ```
 > ----
