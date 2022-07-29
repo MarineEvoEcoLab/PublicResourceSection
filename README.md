@@ -67,7 +67,6 @@ Below is Apex code used to control seawater chemistry cycling.
 >If Output CO2_HC_LP2 = ON Then ON
 >If pH_Hi < 6.80 Then OFF
 > ```
->---
 
 > **Dissolved Oxygen (DO)**
 >
@@ -92,7 +91,6 @@ Below is Apex code used to control seawater chemistry cycling.
 > If Time 20:00 to 00:00 Then ON
 > If DO_Hi < 01.5 Then OFF
 > ```
-> ----
 
 > Ambient Air 
 > 
@@ -107,4 +105,3 @@ Below is Apex code used to control seawater chemistry cycling.
 > Fallback OFF
 > Set ON
 > ```
-> ----
