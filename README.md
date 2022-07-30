@@ -19,7 +19,23 @@
 <img src="assets/media/Bucket_photo.jpg" width="300"/>
 </p>
 
-**Tile 1** Photo of Hyrule on the left and Inside H4 bucket on the right. 
+**Tile 1** Photo of Hyrule on the left and Inside H4 bucket on the right.
+
+
+<p>
+<img src="assets/media/Hyrule_Neptune.jpg" width="650">
+</p>
+
+**Figure 2.**
+
+<p>
+<img src="assets/media/Hyrule_NeptunePhoto.jpg" width="650">
+</p>
+
+**Tile 2.**
+
+
+
 
 # Parts
 
@@ -32,76 +48,132 @@ Want to embed a markdown dataframe with materials and urls
 Below is Apex code used to control seawater chemistry cycling.
 
 
-> **pH Control:**
->
-> CO2_H2_DEC
-> ```
-> Fallback OFF
-> Set OFF
-> OSC 000:00/000:05/000:20 Then ON
-> If pH_Hi < 7.00 Then OFF
-> If Time 20:30 to 20:00 Then OFF
-> ```
-> CO2_HC_LP
-> ```
-> Fallback OFF
-> Set OFF
-> OSC 000:00/000:01/001:29 Then ON
-> If pH_Hi < 7.01 Then OFF
-> If Time 00:00 to 20:30 Then OFF
->```
-> CO2_HC_LP2
->```
-> Fallback OFF
-> Set OFF
-> OSC 000:00/000:01/001:29 Then on
-> If Time 03:00 to 00:00 Then OFF
-> If pH_Hi < 7.05 Then OFF
->```
-> CO2_HC Port 
-> ```
->Fallback OFF 
->Set OFF
->If Output CO2_HC_DEC = ON Then ON
->If Output CO2_HC_LP = ON Then ON
->If Output CO2_HC_LP2 = ON Then ON
->If pH_Hi < 6.80 Then OFF
-> ```
+ **pH Control:**
 
-> **Dissolved Oxygen (DO)**
->
-> N2_HC_LP
->```
-> Fallback OFF
-> Set OFF
-> If Time 00:00 to 03:00 Then ON
-> If DO_Hi < 02.0 Then OFF
->```
-> N2_HC_INC
->```
-> Fallback OFF
-> Set OFF
->```
-> N2_HC
-> ```
-> Fallback OFF
-> Set OFF
-> If Output N2_HC_LP = ON Then ON
-> If Output N2_HC_INC = ON Then ON
-> If Time 20:00 to 00:00 Then ON
-> If DO_Hi < 01.5 Then OFF
-> ```
+<details open>
+<summary>C02_H2_DEC</summary>
+<br>
 
-> Ambient Air 
-> 
-> HI_AIR
-> ```
-> Fallback OFF
-> Set OFF
-> If Time 03:00 to 20:00 Then ON
-> ```
-> CON_AIR
-> ```
-> Fallback OFF
-> Set ON
-> ```
+```
+ Fallback OFF
+ Set OFF
+ OSC 000:00/000:05/000:20 Then ON
+ If pH_Hi < 7.00 Then OFF
+ If Time 20:30 to 20:00 Then OFF
+ ```
+</details>
+
+<details open>
+<summary> CO2_HC_LP</summary> 
+<br>
+
+```
+ Fallback OFF
+ Set OFF
+ OSC 000:00/000:01/001:29 Then ON
+ If pH_Hi < 7.01 Then OFF
+ If Time 00:00 to 20:30 Then OFF
+```
+</details>
+
+
+<details open>
+<summary> CO2_HC_LP2 </summary>
+<br>
+
+```
+ Fallback OFF
+ Set OFF
+ OSC 000:00/000:01/001:29 Then on
+ If Time 03:00 to 00:00 Then OFF
+ If pH_Hi < 7.05 Then OFF
+```
+</details>
+
+<details open>
+
+<summary> CO2_HC Port </summary>
+<br>
+
+ ```
+Fallback OFF 
+Set OFF
+If Output CO2_HC_DEC = ON Then ON
+If Output CO2_HC_LP = ON Then ON
+If Output CO2_HC_LP2 = ON Then ON
+If pH_Hi < 6.80 Then OFF
+ ```
+</details>
+
+ 
+
+ **Dissolved Oxygen (DO)**
+
+<details open>
+<summary> N2_HC_LP</summary>
+<br>
+
+```
+ Fallback OFF
+ Set OFF
+ If Time 00:00 to 03:00 Then ON
+ If DO_Hi < 02.0 Then OFF
+```
+</details>
+
+
+<details open>
+<summary> N2_HC_INC</summary>
+<br>
+
+```
+ Fallback OFF
+ Set OFF
+```
+</details>
+
+
+<details open>
+<summary> N2_HC</summary>
+<br>
+
+ ```
+ Fallback OFF
+ Set OFF
+ If Output N2_HC_LP = ON Then ON
+ If Output N2_HC_INC = ON Then ON
+ If Time 20:00 to 00:00 Then ON
+ If DO_Hi < 01.5 Then OFF
+ ```
+</details>
+
+**Ambient Air**
+
+<details open>
+<summary> HI_AIR</summary>
+<br>
+
+ ```
+ Fallback OFF
+ Set OFF
+ If Time 03:00 to 20:00 Then ON
+ ```
+</details>
+
+
+<details open>
+<summary> CON_AIR</summary>
+<br>
+
+ ```
+ Fallback OFF
+ Set ON
+ ```
+</details>
+
+
+
+
+
+
+
