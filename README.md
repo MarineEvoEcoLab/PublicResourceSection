@@ -50,7 +50,7 @@ Below is Apex code used to control seawater chemistry cycling.
 
  **pH Control:**
 
-<details open>
+<details close>
 <summary>C02_H2_DEC</summary>
 <br>
 
@@ -63,7 +63,7 @@ Below is Apex code used to control seawater chemistry cycling.
  ```
 </details>
 
-<details open>
+<details close>
 <summary> CO2_HC_LP</summary> 
 <br>
 
@@ -77,7 +77,7 @@ Below is Apex code used to control seawater chemistry cycling.
 </details>
 
 
-<details open>
+<details close>
 <summary> CO2_HC_LP2 </summary>
 <br>
 
@@ -90,7 +90,7 @@ Below is Apex code used to control seawater chemistry cycling.
 ```
 </details>
 
-<details open>
+<details close>
 
 <summary> CO2_HC Port </summary>
 <br>
@@ -109,7 +109,7 @@ If pH_Hi < 6.80 Then OFF
 
  **Dissolved Oxygen (DO)**
 
-<details open>
+<details close>
 <summary> N2_HC_LP</summary>
 <br>
 
@@ -122,7 +122,7 @@ If pH_Hi < 6.80 Then OFF
 </details>
 
 
-<details open>
+<details close>
 <summary> N2_HC_INC</summary>
 <br>
 
@@ -133,7 +133,7 @@ If pH_Hi < 6.80 Then OFF
 </details>
 
 
-<details open>
+<details close>
 <summary> N2_HC</summary>
 <br>
 
@@ -149,7 +149,7 @@ If pH_Hi < 6.80 Then OFF
 
 **Ambient Air**
 
-<details open>
+<details close>
 <summary> HI_AIR</summary>
 <br>
 
@@ -161,7 +161,7 @@ If pH_Hi < 6.80 Then OFF
 </details>
 
 
-<details open>
+<details close>
 <summary> CON_AIR</summary>
 <br>
 
