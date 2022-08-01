@@ -52,6 +52,8 @@
 
 Apex programming is designed to turn on or off devices plugged into Energy bars depending on logical arguments. For a tutorial on Apex programming and creating virtual outputs see [Neptune Apex Programming Tutorials, Part 5: Virtual Outputs](https://www.reef2reef.com/ams/neptune-apex-programming-tutorials-part-5-virtual-outputs.703/)
 
+Below are real examples of virtual outputs design for manipulating seawater chemistry following diurnal cycling.
+
  **pH Control:**
 
 <details close>
