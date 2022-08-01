@@ -7,7 +7,7 @@
 
 ## Introduction
 
-**MarineEvoEcoLab/PublicResourceSection** provides information on the materials and methods used in the experimental aquarium design. This includes a description of [system design](#System), [list of parts](#Parts), and [code](#Code) paramount to the experiment. 
+**MarineEvoEcoLab/PublicResourceSection** provides information on the materials and methods used in the experimental aquarium design. This includes a description of [system design](#System), [code](#Code), [list of parts](#Parts) paramount to the experiment. 
 
 # System Design
 
@@ -29,6 +29,9 @@
 <img src="assets/media/gas_setup.jpg" width="450">
 </p>
 
+**Tile 2.** Tank configuration with N2 tanks on the right in black and CO2 tanks on the left in grey. Tanks are hooked up in a series to a automatic gas changeover eliminator valves, a micro matic 642, CO2 or neptune solenoids and water pump located within the head tanks. 
+ 
+
 ## Neptune Hardware Layout
 
 <p align="center">
@@ -41,9 +44,13 @@
 <img src="assets/media/Neptune_Hyrule_Photo.jpg" width="650">
 </p>
 
-**Tile 3.** Neptune Configuration with power bank, brain, and modules used in the aquarium design. 
+**Tile 3.** Neptune Configuration with power bank, brain, and modules used in the aquarium design. AirGas tanks are hooked up to a automatic Gas changeover eliminator valves 6091 which is then attached to 
 
 # Code
+
+## Apex Fusion
+
+Apex programming is designed to turn on or off devices plugged into Energy bars depending on logical arguments. For a tutorial on Apex programming and creating virtual outputs see [Neptune Apex Programming Tutorials, Part 5: Virtual Outputs](https://www.reef2reef.com/ams/neptune-apex-programming-tutorials-part-5-virtual-outputs.703/)
 
  **pH Control:**
 
@@ -168,6 +175,13 @@ If pH_Hi < 6.80 Then OFF
  ```
 </details>
 
+## Pulling Data From Apex Fusion
+
+Logged data from Apex Fusion is archived and stored in XML format. For a overview of how to access this data see [chapter 10 of the comprehensive reference manual](https://www.neptunesystems.com/downloads/docs/Comprehensive_Reference_Manual.pdf).
+
+[Pulling Apex Fusion Data Rscript](assets/docs/)
+
+
 # Parts
 
 
@@ -184,6 +198,6 @@ If pH_Hi < 6.80 Then OFF
 | CO2 Solenoid                                    | MA955    |
 | Neptune Solenoid                                | SV-1     |
 | Magnetic Stirrer                                | MS5      |
-| Water Pump                                      | E160713  |
-| Automatic Gas Changeover Eliminator Valves 6091 | 6091     |
+| Pump                                            | E160713  |
+| Automatic Gas Changeover Eliminator Valves      | 6091     |
 | Micro Matic 642                                 | 6422     |
