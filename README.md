@@ -15,7 +15,7 @@
 
 ![Hyrule schematic](assets/media/Hyrule.jpg)
 
-**Figure 1** **A)** Break down of system design. Seawater chemistry is altered within the header tanks, within which carbon dioxide and nitrogen gas are used to alter seawater pH and dissolved oxygen. Treated seawater (CO2 and N2 gas) is actively pumped from the high treatment header tank into buckets H1-H4. Unmodified water (Ambient Air) is actively pumped from the control treatment header tank into C1-C4. Buckets 1-3 contain larvae, whereas buckets with probes contain no larvae. **B)** Break down of bucket design. Seawater is actively pumped from the water line through a flow meter which is adjacent to activated carbon. a constant mixing of seawater is maintained with a stir bar/plate. Seawater is passively pumped out of the system through a banjo filter. **C)** Break down of header tank design. Seawater is pumped through 1, 10, and 25 micron filters and into header tanks. Within which ambient, Carbon Dioxide, and Nitrogen gas is pumped into for cycling of low/high pH and low/high Dissolved oxygen conditions. Conditioned water is then pumped from the header tanks into the buckets. 
+**Figure 1** **A)** Break down of system design. Seawater chemistry is altered within the header tanks, within which carbon dioxide and nitrogen gas are used to alter seawater pH and dissolved oxygen. Treated seawater (CO2 and N2 gas) is actively pumped from the high treatment header tank into buckets H1-H4. Unmodified water (Ambient Air) is actively pumped from the control treatment header tank into C1-C4. Buckets 1-3 contain larvae, whereas buckets with probes contain no larvae. **B)** Break down of bucket design. Seawater is actively pumped from the water line through a flow meter which is adjacent to activated carbon. a constant mixing of seawater is maintained with a stir bar/plate. Seawater is passively pumped out of the system through a banjo filter with filter sizes varying between 25 to 55 microns depending on larval development. **C)** Break down of header tank design. Seawater is pumped through 25, 10, and 1 micron filters respectively and into header tanks through an activated carbon sock. Within the header tanks ambient, Carbon Dioxide, and Nitrogen gas is actively pumped to achieve cycling of low/high pH and low/high Dissolved oxygen conditions. Conditioned water is continousley pumped from the header tanks into the buckets.
 
 
 <p float="left">
@@ -177,9 +177,9 @@ If pH_Hi < 6.80 Then OFF
 
 ## Pulling Data From Apex Fusion
 
-Logged data from Apex Fusion is archived and stored in XML format. For a overview of how to access this data see [chapter 10 of the comprehensive reference manual](https://www.neptunesystems.com/downloads/docs/Comprehensive_Reference_Manual.pdf).
+Logged data from Apex Fusion is archived and stored in XML format. For an overview of how to access this data see [chapter 10 of the comprehensive reference manual](https://www.neptunesystems.com/downloads/docs/Comprehensive_Reference_Manual.pdf).
 
-[Pulling Apex Fusion Data Rscript](assets/docs/)
+An example of Pulling Apex Fusion Data in R as implemented in our aquatic design can be found [HERE](assets/docs/ApexDataPull.rmd).
 
 
 # Parts

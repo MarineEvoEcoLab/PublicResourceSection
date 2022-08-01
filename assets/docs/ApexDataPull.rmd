@@ -1,0 +1,142 @@
+---
+title: "Apex_Data_Extract"
+author: "jpuritz"
+date: "8/03/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##### Apex data from Larval Systems Hyrule and TBS
+##### code modified from Sam Gurr and Jill Ashey
+##### modified by Megan Guidry on 11/12/2021
+
+[Working with XML data article](http://www.informit.com/articles/article.aspx?p=2215520)
+
+## Load packages
+```{r}
+# Load packages 
+library("XML")
+library("plyr")
+library("tidyverse")
+```
+
+# Apex log storage time 
+Depending upon your sampling frequency, number probes, etc. the amount of time Apex fusion will store your data changes. For our Hyrule system, it is roughly 2-3 months.
+
+# read in xml info
+```{r}
+# Read in xml info
+# connect to 'Earthsea 5G' wifi at Blount building to access data (password in slack)
+# change IP address below to the one matching the Apex system you want to pull data from
+# navigate to IP address in Apex Fusion: Dashboard>Expand Gear Icon>Network Icon
+xmlfile_Hyrule <- xmlParse("http://192.168.0.100/cgi-bin/datalog.xml?sdate=220513&days=7") #read in the date plus x days of Apex data; takes 1-2mins depending upon data
+
+Apex.Data.Hyrule <- ldply(xmlToList(xmlfile_Hyrule), data.frame) #convert xml to dataframe, takes ~10-30mins depending upon amount of data
+
+# look at the data to see which columns you want to keep in the next section
+View(Apex.Data.Hyrule)
+``` 
+
+# HYRULE - Clean up and export table
+```{r}
+# print column names or head the data frame to the screen for easy access
+colnames(Apex.Data.Hyrule)
+head(Apex.Data.Hyrule)
+
+# HYURULE probe names matched up with our probe names- for easier reference (complied from the ApexData dataframe) 
+# "probe.name" = T1_HB
+# "probe.name.1" = pH_HB
+# "probe.name.2" = T1_Hi
+# "probe.name.3" = pH_Hi
+# "probe.name.4" = T3_Hi
+# "probe.name.5" = DO_Hi
+# "probe.name.6" = T1_Con
+# "probe.name.7" = pH_CON
+# "probe.name.8" = T3_Con
+# "probe.name.9" = DO_CON
+# "probe.name.10" = T3_Lo
+# "probe.name.11" = DO_Lo
+
+# "probe.name.29" =T1_Lo
+# "probe.name.30" = pH_Lo
+# "probe.name.31" = T3_LB
+# "probe.name.32" = DO_LB
+# "probe.name.33" = T1_LB
+# "probe.name.34" = pH_LB
+# "probe.name.35" = T3_CB
+# "probe.name.36" = DO_CB
+# "probe.name.37" = T1_CB
+# "probe.name.38" = pH_CB
+# "probe.name.39" = T3_HB
+# "probe.name.40" = DO_HB
+
+#keep columnes with data of interest (basically the ones above). It will be specific to the Apex configuration.
+Apex.Data.Hyrule2 <- Apex.Data.Hyrule %>% dplyr::select(c("date",
+                                     "probe.name", "probe.value",       #T1_HB
+                                     "probe.name.1", "probe.value.1",   #pH_HB
+                                     "probe.name.2", "probe.value.2",   #T1_Hi
+                                     "probe.name.3", "probe.value.3",   #pH_Hi
+                                     "probe.name.4", "probe.value.4",   #T3_Hi
+                                     "probe.name.5", "probe.value.5",   #DO_Hi
+                                     "probe.name.6", "probe.value.6",   #T1_Con
+                                     "probe.name.7", "probe.value.7",   #pH_CON
+                                     "probe.name.8", "probe.value.8",   #T3_Con
+                                     "probe.name.9", "probe.value.9",   #DO_CON
+                                     "probe.name.10", "probe.value.10", #T3_Lo
+                                     "probe.name.11", "probe.value.11",  #DO_Lo
+                                     "probe.name.29", "probe.value.29",  #T1_Lo
+                                     "probe.name.30", "probe.value.30",  #pH_Lo
+                                     "probe.name.31", "probe.value.31",  #T3_LB
+                                     "probe.name.32", "probe.value.32",  #DO_LB
+                                     "probe.name.33", "probe.value.33",  #T1_LB
+                                     "probe.name.34", "probe.value.34",  #pH_LB
+                                     "probe.name.35", "probe.value.35",  #T3_CB
+                                     "probe.name.36", "probe.value.36",  #DO_CB
+                                     "probe.name.37", "probe.value.37",  #T1_CB
+                                     "probe.name.38", "probe.value.38",  #pH_CB
+                                     "probe.name.39", "probe.value.39",  #T3_HB
+                                     "probe.name.40", "probe.value.40"))  #DO_HB
+Probe.Data.Hyrule <- na.omit(Apex.Data.Hyrule2) # remove NAs
+
+# rename the probes to more useful, specific names - be sure the order is correct
+colnames(Probe.Data.Hyrule) <- c("Date.Time", # rename columns
+                          "AS_Hy_T1_HB", "AS_Hy_T1_HiBucket", #"probe.name", "probe.value",       #T1_HB
+                          "AS_Hy_pH_HB", "AS_Hy_pH_HiBucket",   #"probe.name.1", "probe.value.1",   #pH_HB
+                          "AS_Hy_T1_Hi", "AS_Hy_T1_HiHead", #"probe.name.2", "probe.value.2",   #T1_Hi
+                          "AS_Hy_pH_Hi", "AS_Hy_pH_HiHead",   #"probe.name.3", "probe.value.3",   #pH_Hi
+                          "AS_Hy_T3_Hi", "AS_Hy_T3_HiHead", #"probe.name.4", "probe.value.4",   #T3_Hi
+                          "AS_Hy_DO_Hi", "AS_Hy_DO_HiHead",   #"probe.name.5", "probe.value.5",   #DO_Hi
+                          "AS_Hy_T1_Con", "AS_Hy_T1_ConHead",#"probe.name.6", "probe.value.6",   #T1_Con
+                          "AS_Hy_pH_CON", "AS_Hy_pH_ConHead",  #"probe.name.7", "probe.value.7",   #pH_CON
+                          "AS_Hy_T3_Con", "AS_Hy_T3_ConHead",#"probe.name.8", "probe.value.8",   #T3_Con
+                          "AS_Hy_DO_CON", "AS_Hy_DO_ConHead",  #"probe.name.9", "probe.value.9",   #DO_CON
+                          "T3_Lo", "T3_LoHead",  
+                          "DO_Lo", "DO_LoHead", 
+                          "T1_Lo", "T1_LoHead", 
+                          "pH_Lo", "pH_LoHead", 
+                          "T3_LB", "T3_LoBucket",    
+                          "DO_LB", "DO_LoBucket",    
+                          "T1_LB", "T1_LoBucket",   
+                          "pH_LB", "pH_LoBucket",     
+                          "AS_Hy_T3_CB", "AS_Hy_T3_ConBucket",     
+                          "AS_Hy_DO_CB", "AS_Hy_DO_ConBucket",   
+                          "AS_Hy_T1_CB", "AS_Hy_T1_ConBucket",     
+                          "AS_Hy_pH_CB", "AS_Hy_pH_ConBucket",  
+                          "AS_Hy_T3_HB", "AS_Hy_T3_HiBucket",  
+                          "AS_Hy_DO_HB","AS_Hy_DO_HiBucket")    
+                          
+
+# Adjust DateTime
+Probe.Data.Hyrule$Date.Time <- as.POSIXct(Probe.Data.Hyrule$Date.Time, format = "%m/%d/%Y %H:%M:%S", tz="EST") #convert date to HI time
+
+# Write out CSV file 
+# *To avoid overwriting previous files, keep line below commented out until you've changed the date and are ready to save a new csv*
+#write out csv with today's data
+write.csv(Probe.Data.Hyrule, "~/Dropbox/PLOMEE/Puritz_Wetlab_Data/Data/ApexData/Hyrule/20220520_Hyrule_label.csv")
+# Append this data onto previous data
+
+#create directory for today's plots
+#dir.create("~/Dropbox/PLOMEE/Puritz_Wetlab_Data/ApexData/Hyrule/Hyrule_plots/20220520")
