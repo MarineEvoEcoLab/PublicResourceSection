@@ -23,25 +23,25 @@
 
 **Tile 1** Photo of Hyrule on the left and Inside H4 bucket on the right.
 
+<p align="center">
+<img src="assets/media/gas_setup.jpg" width="450">
+</p>
 
 ## Neptune Hardware Layout
 
-<p>
+<p align="center">
 <img src="assets/media/Hyrule_Neptune.jpg" width="650">
 </p>
 
 **Figure 2.** Schematic showing the wiring of the neptune system used in the aquarium design to modulate modulate sea water chemistry. Arrows indicate USB connections with arrows pointing to source module.
 
-<p>
+<p align="center">
 <img src="assets/media/Neptune_Hyrule_Photo.jpg" width="650">
 </p>
 
-**Tile 2.** Neptune Configuration with power bank, brain, and modules used in the aquarium design. 
+**Tile 3.** Neptune Configuration with power bank, brain, and modules used in the aquarium design. 
 
 # Code
-
-Below is Apex code used to control seawater chemistry cycling.
-
 
  **pH Control:**
 
@@ -169,21 +169,19 @@ If pH_Hi < 6.80 Then OFF
 # Parts
 
 
-**Table 1.** Description of part, model number and a link to find the part if no model number was discovered. 
-| Name                            | Model #  | url                                                                     |
-|---------------------------------|----------|-------------------------------------------------------------------------|
-| Power Supply                    | EB832    |                                                                         |
-| Apex Controller Base Unit       | APEXNG   |                                                                         |
-| PM1 Module                      | PM1      |                                                                         |
-| PM3 Module                      | PM3      |                                                                         |
-| Temperature Probe               | PRBTMPJR |                                                                         |
-| Double Junction pH Probe        | PRBPHDJ  |                                                                         |
-| Oxygaurd Dissolved Oxygen Probe | PRBDO    |                                                                         |
-| CO2 Solenoid                    | MA955    |                                                                         |
-| Neptune Solenoid                | NA       | https://www.bulkreefsupply.com/sv-1-solenoid-valve-neptune-systems.html |
-| Magnetic Stirrer                | MS5      |
-
-
-
-
-
+**Table 1.** Summary of parts and their model number used in the aquarium design. 
+| Name                                            | Model #  |
+|-------------------------------------------------|----------|
+| Power Supply                                    | EB832    |
+| Apex Controller Base Unit                       | APEXNG   |
+| PM1 Module                                      | PM1      |
+| PM3 Module                                      | PM3      |
+| Temperature Probe                               | PRBTMPJR |
+| Double Junction pH Probe                        | PRBPHDJ  |
+| Oxygaurd Dissolved Oxygen Probe                 | PRBDO    |
+| CO2 Solenoid                                    | MA955    |
+| Neptune Solenoid                                | SV-1     |
+| Magnetic Stirrer                                | MS5      |
+| Water Pump                                      | E160713  |
+| Automatic Gas Changeover Eliminator Valves 6091 | 6091     |
+| Micro Matic 642                                 | 6422     |
