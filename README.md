@@ -1,5 +1,7 @@
 
-# Public Resources ![Puritz Lab Logo](assets/media/#gh-light-mode-only)
+<img src="assets/media/seethroughlargePuritzlogo.png" width="300">
+
+# Public Resources
 
 [![run with neptune](https://img.shields.io/badge/run%20with-neptune-orange?)](https://www.neptunesystems.com/)
 
