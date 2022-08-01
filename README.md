@@ -9,6 +9,8 @@
 
 # System Design
 
+## Flow Through System
+
 ![Hyrule schematic](assets/media/Hyrule.jpg)
 
 **Figure 1** **A)** Break down of system design. Seawater chemistry is altered within the header tanks, within which carbon dioxide and nitrogen gas are used to alter seawater pH and dissolved oxygen. Treated seawater (CO2 and N2 gas) is actively pumped from the high treatment header tank into buckets H1-H4. Unmodified water (Ambient Air) is actively pumped from the control treatment header tank into C1-C4. Buckets 1-3 contain larvae, whereas buckets with probes contain no larvae. **B)** Break down of bucket design. Seawater is actively pumped from the water line through a flow meter which is adjacent to activated carbon. a constant mixing of seawater is maintained with a stir bar/plate. Seawater is passively pumped out of the system through a banjo filter.
@@ -22,26 +24,19 @@
 **Tile 1** Photo of Hyrule on the left and Inside H4 bucket on the right.
 
 
+## Neptune Hardware Layout
+
 <p>
 <img src="assets/media/Hyrule_Neptune.jpg" width="650">
 </p>
 
-**Figure 2.**
+**Figure 2.** Schematic showing the wiring of the neptune system used in the aquarium design to modulate modulate sea water chemistry. Arrows indicate USB connections with arrows pointing to source module.
 
 <p>
-<img src="assets/media/Hyrule_NeptunePhoto.jpg" width="650">
+<img src="assets/media/Neptune_Hyrule_Photo.jpg" width="650">
 </p>
 
-**Tile 2.**
-
-
-
-
-# Parts
-
-Full Parts list.... need help with this. 
-
-Want to embed a markdown dataframe with materials and urls
+**Tile 2.** Neptune Configuration with power bank, brain, and modules used in the aquarium design. 
 
 # Code
 
@@ -171,7 +166,22 @@ If pH_Hi < 6.80 Then OFF
  ```
 </details>
 
+# Parts
 
+
+**Table 1.** Description of part, model number and a link to find the part if no model number was discovered. 
+| Name                            | Model #  | url                                                                     |
+|---------------------------------|----------|-------------------------------------------------------------------------|
+| Power Supply                    | EB832    |                                                                         |
+| Apex Controller Base Unit       | APEXNG   |                                                                         |
+| PM1 Module                      | PM1      |                                                                         |
+| PM3 Module                      | PM3      |                                                                         |
+| Temperature Probe               | PRBTMPJR |                                                                         |
+| Double Junction pH Probe        | PRBPHDJ  |                                                                         |
+| Oxygaurd Dissolved Oxygen Probe | PRBDO    |                                                                         |
+| CO2 Solenoid                    | MA955    |                                                                         |
+| Neptune Solenoid                | NA       | https://www.bulkreefsupply.com/sv-1-solenoid-valve-neptune-systems.html |
+| Magnetic Stirrer                | MS5      |
 
 
 
