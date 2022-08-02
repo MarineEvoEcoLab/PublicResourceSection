@@ -212,9 +212,7 @@ An example of Pulling Apex Fusion Data in R as implemented in our aquatic design
 
 ### Acknowledgements
  
-This experimental system represents the hard and tireless work of several individuals.  Graduate students Amy Zyck and Megan Guidry have worked over multiple seasons and semesters troubleshooting this project, and Dr. Alex Hooks was vital to many improvements in 2022.  2020 [URI Coastal Fellows](https://web.uri.edu/coastalfellows/) Seraphina Satkowski came back to work on this project with the lab in 2021 along with 2021 Fellows Madeline Kistler and Joe Maiorano (who came back as a post-bac in 2022). 2022 URI Coastal Fellows working on this system include Hailee Carlson, Ben Poepsel, and Halle Peterlin, along with 2022 [Science and Engineering](https://web.uri.edu/cels/diversity-and-inclusion/sef/) Fellow Lydia Cross.  
- 
- Lastly, graduate student Gabe Barrett contributed to data scripts and setup this repository.  
+This experimental system represents the hard and tireless work of several individuals.  Graduate students Amy Zyck and Megan Guidry have worked over multiple seasons and semesters troubleshooting this project, and Dr. Alex Hooks was vital to many improvements in 2022.  2020 [URI Coastal Fellows](https://web.uri.edu/coastalfellows/) Seraphina Satkowski came back to work on this project with the lab in 2021 along with 2021 Fellows Madeline Kistler and Joe Maiorano (who came back as a post-bac in 2022). 2022 URI Coastal Fellows working on this system include Hailee Carlson, Ben Poepsel, and Halle Peterlin, along with 2022 [Science and Engineering](https://web.uri.edu/cels/diversity-and-inclusion/sef/) Fellow Lydia Cross.  Lastly, graduate student Gabe Barrett contributed to data scripts and setup this repository.  
  
  
 This work was funded by RI Sea Grant [![RI Sea Grant-1822-2022-104-01](https://img.shields.io/badge/RI_Sea_Grant-R_1822_2022_104_01%20-blue)](https://seagrant.gso.uri.edu/research/2020-2022-research-2/), the University of Rhode Island, and the USDA National Institute of Food and Agriculture, Hatch Formula project accession number 1017848.
