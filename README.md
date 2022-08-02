@@ -3,7 +3,7 @@
 
 # Public Resources
 
-**MarineEvoEcoLab/PublicResourceSection** provides information on the materials and methods used in experimental project. 
+**MarineEvoEcoLab/PublicResourceSection** provides information on the materials and methods used in experimental projects. 
 
 
 ## Resource 1
