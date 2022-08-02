@@ -1,5 +1,5 @@
 
-<img src="assets/media/seethroughlargePuritzlogo.png" width="300">
+<img src="assets/media/seethroughlargePuritzlogo.png" width="300"> 
 
 # Public Resources
 
@@ -7,7 +7,14 @@
 
 ## Introduction
 
-**MarineEvoEcoLab/PublicResourceSection** provides information on the materials and methods used in the experimental aquarium design. This includes a description of [system design](#System), [code](#Code), [list of parts](#Parts) paramount to the experiment. 
+**MarineEvoEcoLab/PublicResourceSection** provides information on the materials and methods used in the experimental aquarium design. This includes a description of [system design](#System), [code](#Code), [list of parts](#Parts) paramount to the experiment. This work was funded by RI Sea Grant, the University of Rhode Island, and the USDA National Institute of Food and Agriculture, Hatch Formula project accession number 1017848.
+
+[![RI Sea Grant-1822-2022-104-01](https://img.shields.io/badge/RI Sea Grant-2016160%20-blue)](https://nsf.gov/awardsearch/showAward?AWD_ID=2016160 )
+
+
+
+<img src="assets/media/sg_noaa_uri_logo-copy-768x187.png" width="300"> 
+
 
 # System Design
 
