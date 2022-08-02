@@ -8,15 +8,15 @@
 
 ## Resource 1
 ### Experimental Flow-through Sea Water System to diurnally cycle pH and dissolved oxygen
-This product includes a description of [system design](#System), [code](#Code), [list of parts](#Parts) paramount to the experiment. This work was funded by RI Sea Grant, the University of Rhode Island, and the USDA National Institute of Food and Agriculture, Hatch Formula project accession number 1017848.
-
-[![RI Sea Grant-1822-2022-104-01](https://img.shields.io/badge/RI_Sea_Grant-R_1822_2022_104_01%20-blue)](https://seagrant.gso.uri.edu/research/2020-2022-research-2/)
+This product includes a description of [system design](#System), [code](#Code), [list of parts](#Parts) paramount to the experiment. This work was funded by RI Sea Grant [![RI Sea Grant-1822-2022-104-01](https://img.shields.io/badge/RI_Sea_Grant-R_1822_2022_104_01%20-blue)](https://seagrant.gso.uri.edu/research/2020-2022-research-2/), the University of Rhode Island, and the USDA National Institute of Food and Agriculture, Hatch Formula project accession number 1017848.
 
 <img src="assets/media/sg_noaa_uri_logo-copy-768x187.png" width="300"> 
 
 
 ### System Design
+
 [![run with neptune](https://img.shields.io/badge/run%20with-neptune-orange?)](https://www.neptunesystems.com/)
+
 #### Flow Through System
 
 ![Hyrule schematic](assets/media/Hyrule.jpg)
