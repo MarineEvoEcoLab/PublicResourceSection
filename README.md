@@ -3,15 +3,14 @@
 
 # Public Resources
 
-**MarineEvoEcoLab/PublicResourceSection** provides information on the materials and methods used in experimental projects. 
+Two anthropogenic stressors that are largely coupled together and driven by diel cycling via respiration and photosynthesis include low dissolved oxygen (hypoxia) and ocean acidification. The cumulative effects of these stressors remains relatively unknown, in particular for marine organisms that experience discrete life stages. An aquatic system was delevoped in the Puritz Lab to invesitigate the cumulative impacts of hypoxia and ocean acidification at early life stages (Larval and Juvenile) in the Eastern oyster. This repository **MarineEvoEcoLab/PublicResourceSection** provides information on the materials and methods used in that aquatic system.
 
 
 ## Resource 1
 ### Experimental Flow-through Sea Water System to diurnally cycle pH and dissolved oxygen
 This product includes a description of [system design](#System), [code](#Code), [list of parts](#Parts) paramount to the experiment. This work was funded by RI Sea Grant [![RI Sea Grant-1822-2022-104-01](https://img.shields.io/badge/RI_Sea_Grant-R_1822_2022_104_01%20-blue)](https://seagrant.gso.uri.edu/research/2020-2022-research-2/), the University of Rhode Island, and the USDA National Institute of Food and Agriculture, Hatch Formula project accession number 1017848.
 
-<img src="assets/media/sg_noaa_uri_logo-copy-768x187.png" width="300"> 
-
+<img src="assets/media/sg_noaa_uri_logo-copy-768x187.png" width="150" height="55">
 
 ### System Design
 
@@ -50,7 +49,8 @@ This product includes a description of [system design](#System), [code](#Code), 
 <img src="assets/media/Neptune_Hyrule_Photo.jpg" width="650">
 </p>
 
-**Tile 3.** Neptune Configuration with power bank, brain, and modules used in the aquarium design. AirGas tanks are hooked up to a automatic Gas changeover eliminator valves 6091 which is then attached to 
+
+**Tile 3.** Behind the Flow through system in Tile 1. Neptune Configuration with power bank, brain, and modules used in the aquarium design. AirGas tanks are hooked up to a automatic Gas changeover eliminator valves 6091 which is then attached to a Micro Matic 642. From there gas lines are connected to solenoids within which close or open the lines to let gas into the header tanks via a pump. 
 
 ### Code
 
@@ -189,14 +189,25 @@ Logged data from Apex Fusion is archived and stored in XML format. For an overvi
 
 An example of Pulling Apex Fusion Data in R as implemented in our aquatic design can be found [HERE](assets/docs/ApexDataPull.rmd).
 
+### Example Dataframe
+
+
+**Table 1.** Example Dataframe of Apex Fusion data extracted from the R script described above.
+|   | Date.Time       | T1_HB | T1_HiBucket | pH_HB | pH_HiBucket | T1_Hi | T1_HiHead | pH_Hi | pH_HiHead |
+|---|-----------------|-------|-------------|-------|-------------|-------|-----------|-------|-----------|
+| 4 | 1/31/2022 11:44 | T1_HB | 16.9        | pH_HB | 7.99        | T1_Hi | 13.9      | pH_Hi | 8.27      |
+| 5 | 1/31/2022 11:45 | T1_HB | 17          | pH_HB | 7.99        | T1_Hi | 14.1      | pH_Hi | 8.22      |
+| 6 | 1/31/2022 11:46 | T1_HB | 16.8        | pH_HB | 8.01        | T1_Hi | 15.3      | pH_Hi | 8.18      |
+| 7 | 1/31/2022 11:47 | T1_HB | 16.5        | pH_HB | 8.11        | T1_Hi | 17.2      | pH_Hi | 8.14      |
+| 8 | 1/31/2022 11:48 | T1_HB | 16.3        | pH_HB | 8.12        | T1_Hi | 18.7      | pH_Hi | 8.11      |
+
 
 ### Parts
 
-
-**Table 1.** Summary of parts and their model number used in the aquarium design. 
-| Name                                            | Model #  |
-|-------------------------------------------------|----------|
-| Power Supply                                    | EB832    |
+**Table 2.** Summary of parts and their model number used in the aquarium design.
+| Name                                            | Model #  | Manufacturer | weblink |
+|-------------------------------------------------|----------|--------------|---------|
+| Power Supply                                    | EB832    |              | 
 | Apex Controller Base Unit                       | APEXNG   |
 | PM1 Module                                      | PM1      |
 | PM3 Module                                      | PM3      |
@@ -209,6 +220,7 @@ An example of Pulling Apex Fusion Data in R as implemented in our aquatic design
 | Pump                                            | E160713  |
 | Automatic Gas Changeover Eliminator Valves      | 6091     |
 | Micro Matic 642                                 | 6422     |
+| Adjustable Irrigation Drippers                  | 
 
 ### Acknowledgements
  
