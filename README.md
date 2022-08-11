@@ -3,7 +3,7 @@
 
 # Public Resources
 
-Two anthropogenic stressors that are largely coupled together and driven by diel cycling via respiration and photosynthesis include low dissolved oxygen (hypoxia) and ocean acidification. However, it is relatively unknown what the cumulative effects of these stressors are and, in particular, for marine organisms that experience discrete life stages. **An aquatic system was delevoped in the Puritz Lab to invesitigate the cumulative impacts of hypoxia and ocean acidification at early life stages (Larval and Juvenile) in the Eastern oyster**. This repository MarineEvoEcoLab/PublicResourceSection provides information on the materials and methods used in that aquatic system.
+Two anthropogenic stressors that are largely coupled together and driven by diel cycling via respiration and photosynthesis include low dissolved oxygen (hypoxia) and ocean acidification. However, it is relatively unknown what the cumulative effects of these stressors are and, in particular, for marine organisms that experience discrete life stages. **An aquatic system was delevoped in the Puritz Lab to invesitigate the cumulative impacts of hypoxia and ocean acidification at early life stages (Larval and Juvenile) in the Eastern oyster**. This repository  MarineEvoEcoLab/PublicResourceSection provides information on the materials and methods used in that aquatic system.
 
 
 ## Resource 1
@@ -207,20 +207,20 @@ An example of Pulling Apex Fusion Data in R as implemented in our aquatic design
 **Table 2.** Summary of parts and their model number used in the aquarium design.
 | Name                                            | Model #  | Manufacturer | weblink |
 |-------------------------------------------------|----------|--------------|---------|
-| Power Supply                                    | EB832    |              | 
-| Apex Controller Base Unit                       | APEXNG   |
-| PM1 Module                                      | PM1      |
-| PM3 Module                                      | PM3      |
-| Temperature Probe                               | PRBTMPJR |
-| Double Junction pH Probe                        | PRBPHDJ  |
-| Oxygaurd Dissolved Oxygen Probe                 | PRBDO    |
-| CO2 Solenoid                                    | MA955    |
-| Neptune Solenoid                                | SV-1     |
-| Magnetic Stirrer                                | MS5      |
-| Pump                                            | E160713  |
-| Automatic Gas Changeover Eliminator Valves      | 6091     |
-| Micro Matic 642                                 | 6422     |
-| Adjustable Irrigation Drippers                  | 
+| Power Supply                                    | EB832    | Neptune Systems |  https://www.bulkreefsupply.com/energybar-832-neptune-systems.html  | 
+| Apex Controller Base Unit                       | APEXNG   | Neptune Systems  | https://www.bulkreefsupply.com/apex-controller-base-unit-neptune-systems.html  |
+| PM1 Module                                      | PM1      | Neptune Systems  | https://www.bulkreefsupply.com/ph-orp-probe-module-pm1-neptune-systems.html  |
+| PM3 Module                                      | PM3      | Neptune Systems  | https://www.bulkreefsupply.com/dissolved-oxygen-module-pm3-neptune-systems.html  |
+| Temperature Probe                               | PRBTMPJR | Neptune Systems  | https://www.bulkreefsupply.com/temperature-probe-neptune-systems.html  |
+| Double Junction pH Probe                        | PRBPHDJ  | Neptune Systems  | https://www.bulkreefsupply.com/lab-grade-double-junction-ph-probe-neptune-systems.html  |
+| Oxygaurd Dissolved Oxygen Probe                 | PRBDO    | Neptune Systems  | https://www.bulkreefsupply.com/lab-grade-dissolved-oxygen-probe-neptune-systems.html  |
+| CO2 Solenoid                                    | MA955    | Milwaukee Instruments  | https://www.bulkreefsupply.com/milwaukee-ma955-co2-solenoid-valve.html  |
+| Neptune Solenoid                                | SV-1     | Neptune Systems  | https://www.bulkreefsupply.com/sv-1-solenoid-valve-neptune-systems.html  |
+| Magnetic Stirrer                                | MS5      | Tisch Scientific  | https://scientificfilters.com/lab-equipment-special-price/tisch-mini-magnetic-stirrer-ts-ms-5c?gclid=Cj0KCQjwrs2XBhDjARIsAHVymmT-i2hpgUS7YMSBF2uD-g-T79o3N3w46xLvKUs2P7sAv_hIvv8pyD4aApH1EALw_wcB  |
+| Pump                                            | E160713  | Danner Manufacturing  | https://www.thepondguy.com/product/pondmaster-magnetic-drive-water-pump-250/?p=PPCGSHOP&gclid=Cj0KCQjwrs2XBhDjARIsAHVymmSGRK_ekBB5eV9z9XOFn093nkTI3SpVzF76020cXL-5gI6JvJUJaMIaAtfWEALw_wcB  |
+| Automatic Gas Changeover Eliminator Valves      | 6091     | Assurance Valve Systems  | https://kegman.net/products/automatic-gas-changeover-eliminator-valves-6091?gclid=Cj0KCQjwrs2XBhDjARIsAHVymmT2BhWED9NU_RLcWsDQKkdDqJfhvJIS2U7Dcf9-N77AbF2GuKb-hhwaArVsEALw_wcB |
+| Micro Matic 642                                 | 6422     | Micromatic  | https://www.kegerator.com/micromatic-premium-series-primary-double-gauge-regulator/642.html  |
+| Adjustable Irrigation Drippers                  | EZT360 | Tempo Inc. | https://www.dripdepot.com/item/adjustable-dripper-connection-type-threads-pattern-360-degree  |
 
 ### Acknowledgements
  
