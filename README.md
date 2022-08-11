@@ -189,9 +189,6 @@ Logged data from Apex Fusion is archived and stored in XML format. For an overvi
 
 An example of Pulling Apex Fusion Data in R as implemented in our aquatic design can be found [HERE](assets/docs/ApexDataPull.rmd).
 
-### Example Dataframe
-
-
 **Table 1.** Example Dataframe of Apex Fusion data extracted from the R script described above.
 |   | Date.Time       | T1_HB | T1_HiBucket | pH_HB | pH_HiBucket | T1_Hi | T1_HiHead | pH_Hi | pH_HiHead |
 |---|-----------------|-------|-------------|-------|-------------|-------|-----------|-------|-----------|
