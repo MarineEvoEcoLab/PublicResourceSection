@@ -3,8 +3,7 @@
 
 # Public Resources
 
-Two anthropogenic stressors that are largely coupled together and driven by diel cycling via respiration and photosynthesis include low dissolved oxygen (hypoxia) and ocean acidification. However, it is relatively unknown what the cumulative effects of these stressors are and, in particular, for marine organisms that experience discrete life stages. **An aquatic system was delevoped in the Puritz Lab to invesitigate the cumulative impacts of hypoxia and ocean acidification at early life stages (Larval and Juvenile) in the Eastern oyster**. This repository  MarineEvoEcoLab/PublicResourceSection provides information on the materials and methods used in that aquatic system.
-
+**An aquatic system was delevoped in the Puritz Lab to invesitigate the cumulative impacts of hypoxia and ocean acidification at early life stages (Larval and Juvenile) in the Eastern oyster**. This repository provides information on the materials and methods used in that aquatic system.
 
 ## Resource 1
 ### Experimental Flow-through Sea Water System to diurnally cycle pH and dissolved oxygen
